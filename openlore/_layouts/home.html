@@ -1,0 +1,23 @@
+---
+layout: "wrapper"
+---
+
+
+{{ content }}
+<hr>
+
+<h3>pages</h3>
+<ul>
+  {% for page in site.pages %}
+		{% if page.title %}
+			<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+		{% endif %}
+  {% endfor %}  <!-- page -->
+</ul>
+
+<h3>posts</h3>
+<ul>
+  {% for page in site.posts %}
+  	<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+  {% endfor %}  <!-- page -->
+</ul>
