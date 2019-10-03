@@ -21,3 +21,17 @@ layout: "wrapper"
   	<li><a href="{{ page.url }}">{{ page.title }}</a></li>
   {% endfor %}  <!-- page -->
 </ul>
+
+<h3>type1</h3>
+<ul>
+  {% for type1 in site.type1 %}
+  	<li><a href="{{ type1.url }}">{{ type1.title }}</a></li>
+  {% endfor %}
+</ul>
+
+<h3>type2</h3>
+<ul>
+  {% for type2 in site.type2 %}
+  	<li><a href="{{ type2.url }}">{{ type2.title }}</a></li>
+  {% endfor %}
+</ul>
