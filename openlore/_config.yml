@@ -34,19 +34,17 @@ github_username:  jekyll
 plugins:
   - jekyll-feed
 
-# Collections of pages that are not posts
-collections_dir: entries
+# Collections
+collections_dir: content
 collections:
+  info:
+    output: true
+    permalink: /info/:path/
   posts:
     output: true
-    permalink: /news/:path/
-  type1:
+    permalink: /:categories/:title/
+  category:
     output: true
-    permalink: /:collection/:title/
-  type2:
-    output: true
-    permalink: /:collection/:title/
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
