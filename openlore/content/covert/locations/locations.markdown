@@ -1,6 +1,9 @@
 ---
-layout: page
+layout: category
 title:  "locations"
 permalink: "/covert/locations/"
+
+lore:	covert
+category: locations
 ---
-locations
+covert locations

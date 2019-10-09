@@ -1,0 +1,15 @@
+---
+layout: "wrapper"
+---
+
+{{ content }}
+
+<ul>
+	{% for post in site.categories.[page.lore] %}
+		{% if post.categories contains page.category %}
+			<li>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+		{% endif %}
+  {% endfor %}
+</ul>
