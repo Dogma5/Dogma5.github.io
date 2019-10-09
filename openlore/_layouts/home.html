@@ -6,23 +6,17 @@ layout: "wrapper"
 {{ content }}
 <hr>
 
-<h3>pages</h3>
+<h2>Info</h2>
 <ul>
   {% for info in site.info %}
 			<li><a href="{{ info.url }}">{{ info.title }}</a></li>
   {% endfor %}  <!-- page -->
 </ul>
 
-<h3>all posts</h3>
-<ul>
-	{% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
 
-<h3><a href="/frontier2424">frontier2424</a> <a href="/frontier2424/factions">factions</a></h3>
+<hr>
+<h2><a href="/frontier2424">Frontier2424</a></h2>
+<h3><a href="/frontier2424/factions">Factions</a></h3>
 <ul>
 	{% for post in site.categories.frontier2424 %}
 		{% if post.categories contains "factions" %}
@@ -33,7 +27,7 @@ layout: "wrapper"
   {% endfor %}
 </ul>
 
-<h3><a href="/frontier2424">frontier2424</a> <a href="/frontier2424/locations">locations</a></h3>
+<h3><a href="/frontier2424/locations">Locations</a></h3>
 <ul>
 	{% for post in site.categories.frontier2424 %}
 		{% if post.categories contains "locations" %}
@@ -44,7 +38,31 @@ layout: "wrapper"
   {% endfor %}
 </ul>
 
-<h3><a href="/covert">covert</a> <a href="/covert/locations">locations</a></h3>
+<h3><a href="/frontier2424/characters">Characters</a></h3>
+<ul>
+	{% for post in site.categories.frontier2424 %}
+		{% if post.categories contains "characters" %}
+			<li>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+		{% endif %}
+  {% endfor %}
+</ul>
+
+<hr>
+<h2><a href="/covert">Covert</a></h2>
+<h3><a href="/covert/organisations">Organisations</a></h3>
+<ul>
+	{% for post in site.categories.covert %}
+		{% if post.categories contains "organisations" %}
+			<li>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+		{% endif %}
+  {% endfor %}
+</ul>
+
+<h3><a href="/covert/locations">Locations</a></h3>
 <ul>
 	{% for post in site.categories.covert %}
 		{% if post.categories contains "locations" %}
@@ -55,12 +73,23 @@ layout: "wrapper"
   {% endfor %}
 </ul>
 
+<hr>
+<small>
+	<strong>All pages</strong>
+	<ul>
+	{% for page in site.pages %}
+		{% if page.title %}
+			<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+		{% endif %}
+	{% endfor %}
+	</ul>
 
-<h3>All pages</h3>
-<ul>
-{% for page in site.pages %}
-	{% if page.title %}
-		<li><a href="{{ page.url }}">{{ page.title }}</a></li>
-	{% endif %}
-{% endfor %}
-</ul>
+	<strong>All posts</strong>
+	<ul>
+		{% for post in site.posts %}
+	    <li>
+	      <a href="{{ post.url }}">{{ post.title }}</a>
+	    </li>
+	  {% endfor %}
+	</ul>
+</small>
