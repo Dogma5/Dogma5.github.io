@@ -2,4 +2,9 @@
 layout: "wrapper"
 ---
 
+{% for category in page.categories %}
+    <a href="/{% for category in page.categories limit:forloop.index %}{{category}}/{% endfor %}">{{category}}</a>
+{% endfor %}
+<hr>
+
 {{ content }}
