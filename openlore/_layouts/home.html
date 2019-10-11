@@ -73,7 +73,7 @@ layout: "wrapper"
   {% endfor %}
 </ul>
 
-<hr>
+<!--
 <small>
 	<strong>All pages</strong>
 	<ul>
@@ -92,4 +92,15 @@ layout: "wrapper"
 	    </li>
 	  {% endfor %}
 	</ul>
+
+  <strong>All categories</strong>
+  {% assign category_list = site.categories %}
+  <ul>
+  	{% for category in category_list %}
+  			<li>
+  				<a href="#{{ category[0] | slugify }}" class="post-tag">{{ category[0] }} {{ category[1].size }}</a>
+  			</li>
+  	{% endfor %}
+  </ul>
 </small>
+-->
