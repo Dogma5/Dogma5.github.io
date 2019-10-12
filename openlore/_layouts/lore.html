@@ -2,10 +2,14 @@
 layout: "wrapper"
 ---
 
-{% if page.lore %}
-	{% capture menu_var %}menu_{{ page.lore }}.html{% endcapture %}
-	{% include {{ menu_var }} %}
+{% if page.menu %}
+	<ul>
+		{% for menu in page.menu %}
+				<li><a href="/{{ page.lore }}/{{ menu }}">{{ menu }}</a></li>
+		{% endfor %}
+	</ul>
 {% endif %}
+
 <hr>
 
 {{ content }}

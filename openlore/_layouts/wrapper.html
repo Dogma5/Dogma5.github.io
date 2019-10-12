@@ -1,7 +1,22 @@
 {%- include head.html -%}
 <body>
 
-	<a href="/">home</a>
+	<a href="/">OpenLore</a> {% if page.lore %}<a href="/{{ page.lore }}/">{{ page.lore }}</a>{% endif %}
+
+	{% for category in page.categories %}
+	    <a href="/{% for category in page.categories limit:forloop.index %}{{category}}/{% endfor %}">{{category}}</a>
+	{% endfor %}
+
+	<ul>
+	  {% for info in site.info %}
+				{% if info.url == page.url %}
+					<li style="display:inline-block">{{ info.title }}</li>
+				{% else %}
+					<li style="display:inline-block"><a href="{{ info.url }}">{{ info.title }}</a></li>
+				{% endif %}
+	  {% endfor %}  <!-- page -->
+	</ul>
+
 	<hr>
 	{{ content }}
 
