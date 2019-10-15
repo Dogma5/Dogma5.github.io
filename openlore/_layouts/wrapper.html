@@ -1,21 +1,42 @@
 {%- include head.html -%}
 <body>
 
-	<a href="/">OpenLore</a> {% if page.lore %}<a href="/{{ page.lore }}/">{{ page.lore }}</a>{% endif %}
+
+	<h1 class="logo">
+		{% if page.url == "/" %}
+			{{ site.title }}
+		{% else %}
+			<a href="/">{{ site.title }}</a>
+		{% endif %}
+	</h1>
+
+	<ul>
+		<li>Worlds
+			<ul>
+				<li>frontier2424</li>
+				<li>covert</li>
+			</ul>
+		</li>
+	</ul>
+
+	{% if page.lore %}<a href="/{{ page.lore }}/">{{ page.lore }}</a>{% endif %}
 
 	{% for category in page.categories %}
 	    <a href="/{% for category in page.categories limit:forloop.index %}{{category}}/{% endfor %}">{{category}}</a>
 	{% endfor %}
 
+
+	<!-- site.info -->
 	<ul>
 	  {% for info in site.info %}
 				{% if info.url == page.url %}
-					<li style="display:inline-block">{{ info.title }}</li>
+					<li>{{ info.title }}</li>
 				{% else %}
-					<li style="display:inline-block"><a href="{{ info.url }}">{{ info.title }}</a></li>
+					<li><a href="{{ info.url }}">{{ info.title }}</a></li>
 				{% endif %}
-	  {% endfor %}  <!-- page -->
+	  {% endfor %}
 	</ul>
+
 
 	<hr>
 	{{ content }}
