@@ -14,11 +14,11 @@
 #
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# you will see them accessed via {{ site.title }}, {  { site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: OpenLore
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -45,6 +45,32 @@ collections:
     permalink: /:categories/:title/
   category:
     output: true
+
+
+nav:
+  frontier2424:
+    title: Frontier2424
+    url: /frontier2424/
+    categories:
+      characters:
+        title: Characters
+        url: /frontier2424/characters/
+      factions:
+        title: Factions
+        url: /frontier2424/factions/
+      locations:
+        title: Locations
+        url: /frontier2424/locations/
+  covert:
+    title: Covert Ops
+    url: /covert/
+    categories:
+      locations:
+        title: Locations
+        url: /covert/locations/
+      factions:
+        title: Organisations
+        url: /covert/organisations/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
