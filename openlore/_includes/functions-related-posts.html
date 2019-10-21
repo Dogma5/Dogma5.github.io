@@ -1,0 +1,23 @@
+<!-- ===== Related posts ===== -->
+{% assign this-page-url = page.url %}
+{% assign related-posts = '' | split: '' %}
+
+{% for post in site.posts %}
+	{% if post.categories contains page.lore and post.categories contains page.categories[1] %}
+		{% if post.url != this-page-url  %}
+			{% assign related-posts = related-posts | push: post %}
+		{% endif %}
+	{% endif %}
+{% endfor %}
+
+{% if related-posts.size > 0 %}
+	<hr>
+	<h3>Related posts</h3>
+	<ul>
+		{% for post in related-posts %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</ul>
+{% else %}
+	<!-- No related posts -->
+{% endif %}
