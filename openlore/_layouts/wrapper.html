@@ -1,60 +1,7 @@
-{%- include head.html -%}
-<body>
+{%- include meta-head.html -%}
+{%- include layout-header.html -%}
 
-<!--{{ site.nav['frontier2424'].categories['locations'].url }}-->
+{{ content }}
 
-<h1 class="logo">
-	{% if page.url == "/" %}
-		{{ site.title }}
-	{% else %}
-		<a href="/">{{ site.title }}</a>
-	{% endif %}
-</h1>
-
-<h3>
-	{% if page.lore %}
-		{{ site.nav[page.lore].title }}
-	{% else %}
-		Worlds:
-	{% endif %}
-</h3>
-<ul>
-	{% for nav in site.nav %}
-			{% if nav[0] == page.lore %}
-				<li><strong><a href="{{ nav[1].url }}">{{ nav[1].title }}</a></strong></li>
-			{% else %}
-				<li><a href="{{ nav[1].url }}">{{ nav[1].title }}</a></li>
-			{% endif %}
-	{% endfor %}
-</ul>
-
-{% if page.lore %}
-	<h3>Category</h3>
-		<ul>
-		{% for categories in site.nav[page.lore].categories %}
-			{% if categories[1].url == page.url %}
-				<li><strong><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></strong></li>
-			{% else %}
-				<li><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
-			{% endif %}
-		{% endfor %}
-		</ul>
-{% endif %}
-
-<h3>About</h3>
-	<ul>
-	  {% for info in site.info %}
-				{% if info.url == page.url %}
-					<li>{{ info.title }}</li>
-				{% else %}
-					<li><a href="{{ info.url }}">{{ info.title }}</a></li>
-				{% endif %}
-	  {% endfor %}
-	</ul>
-
-
-	<hr>
-	{{ content }}
-
-
-{%- include foot.html -%}
+{%- include layout-footer.html -%}
+{%- include meta-foot.html -%}

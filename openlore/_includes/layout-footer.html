@@ -1,0 +1,8 @@
+<footer style="background:silver">
+	<p>
+		<small>
+		  <code>page.lore: {% if page.lore %}<a href="/{{ page.lore }}/">{{ page.lore }}</a>{% endif %}</code><br>
+			<code>page.categories: {% for category in page.categories %}<a href="/{% for category in page.categories limit:forloop.index %}{{category}}/{% endfor %}">{{category}}</a> {% endfor %}</code>
+		</small>
+	</p>
+</footer>

@@ -68,7 +68,7 @@ nav:
       locations:
         title: Locations
         url: /covert/locations/
-      factions:
+      organisations:
         title: Organisations
         url: /covert/organisations/
 
