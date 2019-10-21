@@ -46,7 +46,7 @@ collections:
   category:
     output: true
 
-
+# Nav global
 nav:
   frontier2424:
     title: Frontier2424
