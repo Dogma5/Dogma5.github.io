@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "factions post"
-date:   2019-09-04 00:11:57 +1000
+title:  "locations post"
+date:   2019-09-03 00:11:57 +1000
 
 lore:	frontier2424
 ---

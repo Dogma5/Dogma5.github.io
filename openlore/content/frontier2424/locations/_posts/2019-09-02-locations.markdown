@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  "locations post"
-slug: "test-test"
+title:  "locations post3"
 date:   2019-09-03 00:11:57 +1000
 
 lore:	frontier2424
