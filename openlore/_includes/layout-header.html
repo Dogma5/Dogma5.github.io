@@ -1,5 +1,6 @@
-<header style="background:silver">
+<header>
 <!-- ======= Logo ======= -->
+<div class="nav-main">
 	<h1 class="logo">
 		{% if page.url == "/" %}
 			{{ site.title }}
@@ -9,6 +10,7 @@
 	</h1>
 
 <!-- ======= Lore ======= -->
+<div>
 	<h3>
 		{% if page.lore %}
 			{{ site.nav[page.lore].title }}
@@ -26,9 +28,11 @@
 				{% endif %}
 		{% endfor %}
 	</ul>
+</div>
 
 <!-- ======= Categories ======= -->
 	{% if page.lore %}
+	<div>
 		<h3>
 		{% assign cat-title = "Categories" %}
 			{% for categories in site.nav[page.lore].categories %}
@@ -48,10 +52,13 @@
 				{% endif %}
 			{% endfor %}
 		</ul>
+	</div>
 	{% endif %}
+</div>
 
+<div class="nav-sub">
 <!-- ======= About ======= -->
-	<h3>About</h3>
+	<h3 class="visuallyhidden">About</h3>
 	<ul>
 	  {% for info in site.info %}
 				{% if info.url == page.url %}
@@ -61,6 +68,6 @@
 				{% endif %}
 	  {% endfor %}
 	</ul>
-
+</div>
 </header>
 
