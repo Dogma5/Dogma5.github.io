@@ -1,8 +1,10 @@
 header {
 	background: silver;
 	padding: 1rem;
+
 	display: flex;
 	justify-content: space-between;
+	align-items: baseline;
 
 	a {
 		color: #304257;
@@ -29,9 +31,21 @@ header {
 
 .nav-main {
 	display: flex;
+		align-items: baseline;
 
 	div {
 		padding-right: 1rem;
+		position: relative;
+	}
+
+	ul {
+		position: absolute;
+		left: 0;
+		background: white;
+		padding: 0.5rem 1rem;
+		box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+		border-radius: 4px;
+		width: 109px;
 	}
 }
 
