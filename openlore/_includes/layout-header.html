@@ -11,13 +11,13 @@
 
 <!-- ======= Lore ======= -->
 <div>
-	<h3>
+	<button class="dropdown-btn">
 		{% if page.lore %}
 			{{ site.nav[page.lore].title }}
 		{% else %}
 			Worlds:
 		{% endif %}
-	</h3>
+	</button>
 
 	<ul>
 		{% for nav in site.nav %}
@@ -33,7 +33,7 @@
 <!-- ======= Categories ======= -->
 	{% if page.lore %}
 	<div>
-		<h3>
+		<button class="dropdown-btn">
 		{% assign cat-title = "Categories" %}
 			{% for categories in site.nav[page.lore].categories %}
 				{% if page.categories[1] == categories[0] or categories[1].url == page.url %}
@@ -41,7 +41,7 @@
 				{% endif %}
 			{% endfor %}
 		{{ cat-title }}
-		</h3>
+		</button>
 
 		<ul>
 			{% for categories in site.nav[page.lore].categories %}
