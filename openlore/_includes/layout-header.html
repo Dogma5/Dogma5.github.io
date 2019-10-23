@@ -19,7 +19,7 @@
 		{% endif %}
 	</button>
 
-	<ul>
+	<ul class="dropdown-box">
 		{% for nav in site.nav %}
 				{% if nav[0] == page.lore %}
 					<li><strong><a href="{{ nav[1].url }}">{{ nav[1].title }}</a></strong></li>
@@ -43,7 +43,7 @@
 		{{ cat-title }}
 		</button>
 
-		<ul>
+		<ul class="dropdown-box">
 			{% for categories in site.nav[page.lore].categories %}
 				{% if categories[1].url == page.url or page.categories contains categories[0] %}
 					<li><strong><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></strong></li>
@@ -70,4 +70,3 @@
 	</ul>
 </div>
 </header>
-
