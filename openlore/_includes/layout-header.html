@@ -8,10 +8,11 @@
 			<a href="/">{{ site.title }}</a>
 		{% endif %}
 	</h1>
+	
 
 <!-- ======= Lore ======= -->
 <div>
-	
+
 	{% assign loreTitle = "Worlds" %}
 	{% assign loreClass = "" %}
 	{% if page.lore %}
@@ -20,7 +21,7 @@
 	{% else %}
 		{% assign loreTitle = "Worlds" %}
 		{% assign loreClass = "" %}
-	{% else %}
+	{% endif %}
 	<button class="dropdown-btn {{ loreClass }}">{{ loreTitle }}</button>
 
 	<ul class="dropdown-box">
