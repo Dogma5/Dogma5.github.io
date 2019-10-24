@@ -11,12 +11,17 @@
 
 <!-- ======= Lore ======= -->
 <div>
-
+	
+	{% assign loreTitle = "Worlds" %}
+	{% assign loreClass = "" %}
 	{% if page.lore %}
-		<button class="dropdown-btn isActive">{{ site.nav[page.lore].title }}</button>
+		{% assign loreTitle = site.nav[page.lore].title %}
+		{% assign loreClass = "isActive" %}
 	{% else %}
-		<button class="dropdown-btn">Worlds:</button>
-	{% endif %}
+		{% assign loreTitle = "Worlds" %}
+		{% assign loreClass = "" %}
+	{% else %}
+	<button class="dropdown-btn {{ loreClass }}">{{ loreTitle }}</button>
 
 	<ul class="dropdown-box">
 		{% for nav in site.nav %}
@@ -33,18 +38,15 @@
 	{% if page.lore %}
 	<div>
 
-		{% assign cat-title = "Categories" %}
-
+		{% assign catTitle = "Categories" %}
+		{% assign catClass = "" %}
 		{% for categories in site.nav[page.lore].categories %}
 			{% if page.categories[1] == categories[0] or categories[1].url == page.url %}
-				{% assign cat-title = categories[1].title %}
+				{% assign catTitle = categories[1].title %}
+				{% assign catClass = "isActive" %}
 			{% endif %}
 		{% endfor %}
-		{% if cat-title == "Categories" %}
-			<button class="dropdown-btn">{{ cat-title }}</button>
-		{% else %}
-			<button class="dropdown-btn isActive">{{ cat-title }}</button>
-		{% endif %}
+		<button class="dropdown-btn {{ catClass }}">{{ catTitle }}</button>
 
 		<ul class="dropdown-box">
 			{% for categories in site.nav[page.lore].categories %}
