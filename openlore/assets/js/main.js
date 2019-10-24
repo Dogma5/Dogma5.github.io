@@ -1,17 +1,29 @@
+// ==================================
+// Functions
+// ==================================
+
+// Hide any items with '.isopen'
+// ------------------------------
 function closeAll(){
 	$('.isopen').hide().removeClass('isopen');;
 }
 
+
+
+// ==================================
+// Doc ready
+// ==================================
 $( document ).ready(function() {
 
+
 	// Close all on HTML click
-	// ==================================
+	// ------------------------------
 	$(window).click(function(){
 		closeAll();
 	});
 
 	// Main manu dropdown
-	// ==================================
+	// ------------------------------
 	$('.dropdown-btn').click(function(){
 
 		mydropdown = $(this).next('.dropdown-box');
@@ -25,5 +37,6 @@ $( document ).ready(function() {
 
 		event.stopPropagation();
 	});
+
 
 });// end doc ready
