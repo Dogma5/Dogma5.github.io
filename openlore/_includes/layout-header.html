@@ -11,18 +11,17 @@
 
 <!-- ======= Lore ======= -->
 <div>
-	<button class="dropdown-btn">
-		{% if page.lore %}
-			{{ site.nav[page.lore].title }}
-		{% else %}
-			Worlds:
-		{% endif %}
-	</button>
+
+	{% if page.lore %}
+		<button class="dropdown-btn isActive">{{ site.nav[page.lore].title }}</button>
+	{% else %}
+		<button class="dropdown-btn">Worlds:</button>
+	{% endif %}
 
 	<ul class="dropdown-box">
 		{% for nav in site.nav %}
 				{% if nav[0] == page.lore %}
-					<li><strong><a href="{{ nav[1].url }}">{{ nav[1].title }}</a></strong></li>
+					<li class="isActive"><a href="{{ nav[1].url }}">{{ nav[1].title }}</a></li>
 				{% else %}
 					<li><a href="{{ nav[1].url }}">{{ nav[1].title }}</a></li>
 				{% endif %}
@@ -33,20 +32,24 @@
 <!-- ======= Categories ======= -->
 	{% if page.lore %}
 	<div>
-		<button class="dropdown-btn">
+
 		{% assign cat-title = "Categories" %}
-			{% for categories in site.nav[page.lore].categories %}
-				{% if page.categories[1] == categories[0] or categories[1].url == page.url %}
-					{% assign cat-title = categories[1].title %}
-				{% endif %}
-			{% endfor %}
-		{{ cat-title }}
-		</button>
+
+		{% for categories in site.nav[page.lore].categories %}
+			{% if page.categories[1] == categories[0] or categories[1].url == page.url %}
+				{% assign cat-title = categories[1].title %}
+			{% endif %}
+		{% endfor %}
+		{% if cat-title == "Categories" %}
+			<button class="dropdown-btn">{{ cat-title }}</button>
+		{% else %}
+			<button class="dropdown-btn isActive">{{ cat-title }}</button>
+		{% endif %}
 
 		<ul class="dropdown-box">
 			{% for categories in site.nav[page.lore].categories %}
 				{% if categories[1].url == page.url or page.categories contains categories[0] %}
-					<li><strong><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></strong></li>
+					<li class="isActive"><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
 				{% else %}
 					<li><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
 				{% endif %}
@@ -62,7 +65,7 @@
 	<ul>
 	  {% for info in site.info %}
 				{% if info.url == page.url %}
-					<li><strong><a href="{{ info.url }}">{{ info.title }}</a></strong></li>
+					<li class="isActive"><a href="{{ info.url }}">{{ info.title }}</a></li>
 				{% else %}
 					<li><a href="{{ info.url }}">{{ info.title }}</a></li>
 				{% endif %}
