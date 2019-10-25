@@ -39,8 +39,9 @@ header {
 .logo {
 	padding-right: 1rem;
 	a {
-		color: #304257;
+		color: $color-text;
 		text-decoration: none;
+		opacity: 1;
 	}
 }
 
@@ -65,6 +66,7 @@ header {
 	outline: none;
 	border-radius: 0.25rem;
 	opacity: 0.6;
+	color: $color-text;
 
 	&:after {
 		display: inline-block;
