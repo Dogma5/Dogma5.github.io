@@ -2,7 +2,10 @@ $header-bg: #ebebeb;
 
 header {
 	background: $header-bg;
-	padding: 1rem;
+	padding: 1.25rem 2rem;
+	font-size: 0.875rem;
+	// font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
 
 	display: flex;
 	justify-content: space-between;
@@ -11,7 +14,7 @@ header {
 	a {
 		color: $color-text;
 		text-decoration: none;
-		opacity: 0.6;
+		opacity: 0.7;
 
 		&:hover,
 		&:focus {
@@ -22,12 +25,14 @@ header {
 	.isActive {
 		a {
 			opacity: 1;
+			font-weight: bold;
 		}
 	}
 
 	h1, h2, h3 {
 		font-size: 1rem;
 		margin: 0;
+		line-height: 1rem;
 	}
 
 	ul {
@@ -58,11 +63,10 @@ header {
 .dropdown-btn {
 	border: none;
 	background: none;
-	font-weight: bold;
 	cursor: pointer;
-	padding: 0;
+	font-weight: 500;
 	font-size: 1em;
-	padding: 0.5rem 0.5rem;
+	// padding: 0.5rem 0.5rem;
 	outline: none;
 	border-radius: 0.25rem;
 	opacity: 0.6;
@@ -71,18 +75,23 @@ header {
 	&:after {
 		display: inline-block;
 		content: '\0025bc';
-		position: relative;
 		speak: none;
-		font-size: 13px;
+		font-size: 0.8em;
 		transform: scaleY(0.5) scaleX(1);
+		opacity: 1;
+		padding-left: 4px;
 	}
 
 	&:active {
-		background: rgba(0,0,0,0.1);
+		// background: rgba(0,0,0,0.1);
+	}
+	&:hover {
+		opacity: 1;
 	}
 
 	&.isActive {
-		opacity: 1;
+		// font-weight: bold;
+		// opacity: 1;
 	}
 }
 
@@ -108,8 +117,7 @@ header {
 }
 
 .nav-sub {
-	font-size: 0.875rem;
-	font-weight: bold;
+	// font-weight: bold;
 
 	ul {
 		display: flex;

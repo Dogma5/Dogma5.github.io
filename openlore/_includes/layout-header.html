@@ -1,78 +1,76 @@
+
 <header>
-<!-- ======= Logo ======= -->
-<div class="nav-main">
-	<h1 class="logo">
-		{% if page.url == "/" %}
-			{{ site.title }}
-		{% else %}
-			<a href="/">{{ site.title }}</a>
-		{% endif %}
-	</h1>
-	
+	<!-- ======= nav-main ======= -->
+	<div class="nav-main">
+		<h1 class="logo">
+			{% if page.url == "/" -%}
+				{{ site.title }}
+			{%- else -%}
+				<a href="/">{{ site.title }}</a>
+			{%- endif %}
+		</h1>
 
-<!-- ======= Lore ======= -->
-<div>
+		<div><!-- Lore -->
+			{% assign loreTitle = "Worlds" -%}
+			{%- assign loreClass = "" -%}
+			{%- if page.lore -%}
+				{%- assign loreTitle = site.nav[page.lore].title -%}
+				{%- assign loreClass = "isActive" -%}
+			{%- else -%}
+				{%- assign loreTitle = "Worlds" -%}
+				{%- assign loreClass = "" -%}
+			{%- endif -%}
+			<button class="dropdown-btn {{ loreClass }}">{{ loreTitle }}</button>
 
-	{% assign loreTitle = "Worlds" %}
-	{% assign loreClass = "" %}
-	{% if page.lore %}
-		{% assign loreTitle = site.nav[page.lore].title %}
-		{% assign loreClass = "isActive" %}
-	{% else %}
-		{% assign loreTitle = "Worlds" %}
-		{% assign loreClass = "" %}
-	{% endif %}
-	<button class="dropdown-btn {{ loreClass }}">{{ loreTitle }}</button>
-
-	<ul class="dropdown-box">
-		{% for nav in site.nav %}
-				{% if nav[0] == page.lore %}
+			<ul class="dropdown-box">
+			{%- for nav in site.nav %}
+				{% if nav[0] == page.lore -%}
 					<li class="isActive"><a href="{{ nav[1].url }}">{{ nav[1].title }}</a></li>
-				{% else %}
+				{%- else -%}
 					<li><a href="{{ nav[1].url }}">{{ nav[1].title }}</a></li>
-				{% endif %}
-		{% endfor %}
-	</ul>
-</div>
+				{%- endif -%}
+			{%- endfor %}
+			</ul>
+		</div>
 
-<!-- ======= Categories ======= -->
-	{% if page.lore %}
-	<div>
+		{% if page.lore -%}
+		<div><!-- Categories -->
+			{%- assign catTitle = "Categories" -%}
+			{%- assign catClass = "" -%}
+			{%- for categories in site.nav[page.lore].categories -%}
+				{%- if page.categories[1] == categories[0] or categories[1].url == page.url -%}
+					{%- assign catTitle = categories[1].title -%}
+					{%- assign catClass = "isActive" -%}
+				{%- endif -%}
+			{%- endfor %}
+			<button class="dropdown-btn {{ catClass }}">{{ catTitle }}</button>
 
-		{% assign catTitle = "Categories" %}
-		{% assign catClass = "" %}
-		{% for categories in site.nav[page.lore].categories %}
-			{% if page.categories[1] == categories[0] or categories[1].url == page.url %}
-				{% assign catTitle = categories[1].title %}
-				{% assign catClass = "isActive" %}
-			{% endif %}
-		{% endfor %}
-		<button class="dropdown-btn {{ catClass }}">{{ catTitle }}</button>
-
-		<ul class="dropdown-box">
-			{% for categories in site.nav[page.lore].categories %}
-				{% if categories[1].url == page.url or page.categories contains categories[0] %}
+			<ul class="dropdown-box">
+			{%- for categories in site.nav[page.lore].categories %}
+				{% if categories[1].url == page.url or page.categories contains categories[0] -%}
 					<li class="isActive"><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
-				{% else %}
+				{%- else -%}
 					<li><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
-				{% endif %}
+				{%- endif -%}
+			{% endfor %}
+			</ul>
+		</div>
+		{%- endif %}
+	</div>
+
+	<!-- nav-sub -->
+	<div class="nav-sub">
+		<h3 class="visuallyhidden">About</h3>
+		<ul>
+			{% for info in site.info -%}
+				{% if info.url == page.url -%}
+					<li class="isActive"><a href="{{ info.url }}">{{ info.title }}</a></li>
+				{%- else -%}
+					<li><a href="{{ info.url }}">{{ info.title }}</a></li>
+				{%- endif %}
 			{% endfor %}
 		</ul>
 	</div>
-	{% endif %}
-</div>
-
-<div class="nav-sub">
-<!-- ======= About ======= -->
-	<h3 class="visuallyhidden">About</h3>
-	<ul>
-	  {% for info in site.info %}
-				{% if info.url == page.url %}
-					<li class="isActive"><a href="{{ info.url }}">{{ info.title }}</a></li>
-				{% else %}
-					<li><a href="{{ info.url }}">{{ info.title }}</a></li>
-				{% endif %}
-	  {% endfor %}
-	</ul>
-</div>
 </header>
+
+
