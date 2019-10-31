@@ -1,7 +1,18 @@
 ---
 layout: "wrapper"
 ---
+<div class="splash overlay" {% if page.splash-img %}style="background-image: url({{ page.splash-img }})"{% endif %}>
+	<div class="wrapper">
+		<h1>{{ page.title }}</h1>
+		<div>{{ page.intro | markdownify }}</div>
+		{% if page.readmore %}
+			<a href="{{ page.readmore[1] }}" class="button">{{ page.readmore[0] }}</a>
+  	{% endif %}
+	</div>
+</div>
+
 {{ content }}
+
 
 <ul>
 	{% for post in site.categories.[page.lore] %}
