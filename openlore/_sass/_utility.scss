@@ -18,7 +18,7 @@
 
 	&:before {
 		content: "";
-		background-color: $color-text;
+		background: linear-gradient(90deg, rgba(48,66,87,1) 33%, rgba(48,66,87,0) 100%);
 		opacity: 0.6;
 		top: 0;
 		left: 0;

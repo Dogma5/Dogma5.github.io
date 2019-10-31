@@ -4,9 +4,12 @@ layout: "wrapper"
 <div class="splash overlay" {% if page.splash-img %}style="background-image: url({{ page.splash-img }})"{% endif %}>
 	<div class="wrapper">
 		<h1>{{ page.title }}</h1>
-		<div>{{ page.intro | markdownify }}</div>
-		{% if page.readmore %}
-			<a href="{{ page.readmore[1] }}" class="button">{{ page.readmore[0] }}</a>
+		<div class="intro">{{ page.intro | markdownify }}</div>
+		{% if page.primary %}
+			<a href="{{ page.primary[1] }}" class="button">{{ page.primary[0] }}</a>
+  	{% endif %}
+		{% if page.secondary %}
+			<a href="{{ page.secondary[1] }}" class="button button--secondary">{{ page.secondary[0] }}</a>
   	{% endif %}
 	</div>
 </div>
