@@ -61,16 +61,16 @@ nav:
       locations:
         title: Locations
         url: /frontier2424/locations/
-  covert:
-    title: Covert Ops
-    url: /covert/
+  blackfire4:
+    title: Blackfire 4
+    url: /blackfire4/
     categories:
       locations:
         title: Locations
-        url: /covert/locations/
+        url: /blackfire4/locations/
       organisations:
         title: Organisations
-        url: /covert/organisations/
+        url: /blackfire4/organisations/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
