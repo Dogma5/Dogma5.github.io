@@ -12,10 +12,14 @@ layout: "wrapper"
 			<a href="{{ page.secondary[1] }}" class="button button--secondary">{{ page.secondary[0] }}</a>
   	{% endif %}
 	</div>
+	{% if page.splash-img-attribution %}
+		<div class="attribution">
+			Artwork by <a href="{{ page.splash-img-attribution-url }}" class="">{{ page.splash-img-attribution }}</a>
+		</div>
+	{% endif %}
 </div>
 
 {{ content }}
-
 
 <ul>
 	{% for post in site.categories.[page.lore] %}

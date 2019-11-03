@@ -61,6 +61,9 @@ nav:
       locations:
         title: Locations
         url: /frontier2424/locations/
+      events:
+        title: Events
+        url: /frontier2424/events/
   blackfire4:
     title: Blackfire 4
     url: /blackfire4/
