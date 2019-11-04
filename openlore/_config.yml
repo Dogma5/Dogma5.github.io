@@ -64,6 +64,9 @@ nav:
       events:
         title: Events
         url: /frontier2424/events/
+      style-guides:
+        title: Style guides
+        url: /frontier2424/style-guides/
   blackfire4:
     title: Blackfire 4
     url: /blackfire4/
@@ -74,6 +77,9 @@ nav:
       organisations:
         title: Organisations
         url: /blackfire4/organisations/
+      style-guides:
+        title: Style guides
+        url: /blackfire4/style-guides/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

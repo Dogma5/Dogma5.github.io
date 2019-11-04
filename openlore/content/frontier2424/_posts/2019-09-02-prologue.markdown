@@ -6,13 +6,14 @@ date:   2019-09-03 00:11:57 +1000
 lore:	frontier2424
 ---
 
-> "The most hostile environment ever inhabited by mankind is space.
->
-> Nothing lives in space.  
-> Without life-support you will suffocate. Without environmental control you will freeze. In the event of explosive decompression, you will be sucked out into the void. In the vacuum of space, without protection you have 15 seconds of consciousness. Raw UV radiation will burn you, decompression will boil your fluids, and if you hold your breath, you will rupture your lungs.
->
-> Your equipment is designed for the long haul. Equipment that is rugged, practical, and repairable, takes precedence over fast and high-tech. Because out here on the frontier, journeys don’t take weeks, they can take years, decades even. Help is so far away that in an emergency, communication may be delayed by days.
->
-> Out here. On the frontier, you are alone."
->
-> _An excerpt from The UCU Marshal’s Field Guide._
+## An excerpt from The UCU Marshal’s Field Guide
+
+"The most hostile environment ever inhabited by mankind is space.
+
+Nothing lives in space.  
+Without life-support you will suffocate. Without environmental control you will freeze. In the event of explosive decompression, you will be sucked out into the void. In the vacuum of space, without protection you have 15 seconds of consciousness. Raw UV radiation will burn you, decompression will boil your fluids, and if you hold your breath, you will rupture your lungs.
+
+Your equipment is designed for the long haul. Equipment that is rugged, practical, and repairable, takes precedence over fast and high-tech. Because out here on the frontier, journeys don’t take weeks, they can take years, decades even. Help is so far away that in an emergency, communication may be delayed by days.
+
+Out here. On the frontier, you are alone."
+
