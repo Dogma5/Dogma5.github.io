@@ -1,0 +1,14 @@
+<!-- ===== table of contents ===== -->
+{% if page.toc %}
+<div class="toc">
+	<h3>On this page</h3>
+	<ul>
+		{% for item in page.toc %}
+		<li><a href="#{{ item | slugify }}">{{ item }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+{% else %}
+	<!-- No TOC -->
+{% endif %}
+

@@ -4,6 +4,15 @@ title:  "Style overview"
 date:   2019-09-03 00:11:57 +1000
 
 lore:	frontier2424
+toc:
+  - Verisimilitude
+  - Science
+  - Vehicles
+  - Biohazards
+  - Design
+  - Cultures
+  - Language
+  - Are we alone?
 ---
 
 The world of Frontier2424 is gritty and authentic. Space is hard to survive in. Frontier settlements are isolated and under supplied. Technology is clunky and practical. People are tired and desperate. The frontier is just that, the frontier of human existence.

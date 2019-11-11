@@ -41,7 +41,7 @@ $( document ).ready(function() {
 
 	// Add heading links
 	$('.content h1[id], .content h2[id]').each(function( i ) {
-		string = '<a class="anchor" aria-hidden="true" href="#' + $(this).attr('id') + '">&sect;</a>'
+		string = '<a class="anchor" aria-hidden="true" href="#' + $(this).attr('id') + '"></a>' //&sect;
 		$(this).prepend(string);
 	});
 
