@@ -26,13 +26,13 @@ Space faring vessels have gravity drives and drop-ships look as if they can sust
 
 ## Vehicles
 
-> Work in progress
-
+{:.draft}
 No flying cars. Practical.
 
 ## Biohazards
 
-> Work in progress
+{:.draft}
+Work in progress
 
 ## Design
 
@@ -64,8 +64,7 @@ Much of the vernacular for life onboard space “ships” is inspired by real wo
 
 ## Are we alone?
 
-> Work in progress
-
+{:.draft}
 Intelligent life has yet to be discovered.
 
 Some extremists sects believe that the parracite introduced during the tech-plague may have been sentient and our first-contact.

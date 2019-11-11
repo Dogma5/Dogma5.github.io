@@ -6,7 +6,7 @@ date:   2019-09-03 00:11:57 +1000
 lore:	frontier2424
 ---
 
-## An excerpt from The UCU Marshal’s Field Guide
+### An excerpt from The UCU Marshal’s Field Guide
 
 "The most hostile environment ever inhabited by mankind is space.
 

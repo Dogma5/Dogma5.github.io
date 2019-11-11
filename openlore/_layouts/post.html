@@ -1,9 +1,26 @@
 ---
 layout: "wrapper"
 ---
-<div class="wrapper">
-	<h1>{{ page.title }}</h1>
-	{{ content }}
+<div class="wrapper grid">
+
+	<main class="content">
+		<h1>{{ page.title }}</h1>
+		{{ content }}
+	</main>
+
+	<aside>
+		<div class="toc">
+			<h2>On this page</h2>
+				<hr>
+				<ul>
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+					<li>1</li>
+				</ul>
+		</div>
+	</aside>
+
 </div>
 
 {%- include functions-related-posts.html -%}

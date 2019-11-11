@@ -49,3 +49,28 @@
 	border: solid 2px rgba(0,0,0,0);
 	text-decoration: underline;
 }
+
+
+
+.grid {
+	display: grid;
+	grid-gap: 2rem;
+	max-width: 1600px;
+	grid-template-columns: repeat(12,1fr);
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+
+	main {
+		grid-column: 2/span 6;
+	}
+
+	aside {
+		grid-column: 9/span 3;
+	}
+
+	.toc {
+		position: sticky;
+		position: -webkit-sticky;
+		top: 1rem; /* required */
+	}
+}

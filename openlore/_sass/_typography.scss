@@ -20,8 +20,50 @@ a {
 	}
 }
 
-blockquote {
-	border-left: solid 0.5rem #eeeeee;
-	padding-left: 2rem;
-	margin-left: 0.25rem;
+.draft {
+	&:before {
+		display: block;
+		position: absolute;
+		transform: translateX(-4em);
+		content: "Draft";
+
+		font-size: 14px;
+		padding: 0 0.25em;
+		background: #fff6b8;
+		color: #ca8b00;
+	}
+}
+
+	.anchor {
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+		margin-left: -2rem;
+		width: 2rem; height: 2rem;
+		font-size: 1.25rem;
+		text-decoration: none;
+		opacity: 0.5;
+	}
+
+
+.content {
+  line-height: 1.75;
+
+	// Size
+	h1 { font-size: 3rem; }
+	h2 { font-size: 2rem; }
+	h3 { font-size: 1rem; }
+
+	// Spacing
+	*+* { margin-top: 1rem; }
+	h1, h2, h3, h4, h5 { margin: 0; line-height: 1.25 }
+	*+h2 { margin-top: 4rem; }
+	*+h3 { margin-top: 2rem; }
+
+	//
+	blockquote {
+		border-left: solid 0.5rem #dedede;
+		padding-left: 1.5rem;
+		margin-left: 0.25rem;
+	}
 }
