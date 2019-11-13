@@ -25,6 +25,8 @@ Frontier2424 creations should feel more akin to westerns and military genres tha
 
 The lo-fi sci-fi feel of Frontier2424 is intentional, intended to assist in delivering the themes of survival and perseverance. Technology is designed to be robust and is often battered from years of use causing it to become unreliable and in need of repair. — Technology won’t save you.
 
+{% include functions-image.html src="https://pbs.twimg.com/media/DeOA5jXXUAAQSmJ?format=jpg&name=medium" alt="alt text"%}
+
 ## Science
 
 The intended audience for Frontier2424 is intelligent but the goal is not to appease physicists or astronauts.
