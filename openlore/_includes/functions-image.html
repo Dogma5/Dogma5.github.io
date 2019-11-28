@@ -1,4 +1,14 @@
-<div style="position:relative">
-<img src="{{ include.src }}" alt="{{ include.alt }}"/>
-<div style="position:absolute; left:0; bottom: 0; background:black; color: white;">{{ include.alt }}</div>
+{% if include.src %}
+<div class="image">
+	<img src="{{ include.src }}" alt="{{ include.alt }}"/>
+	{% if include.attr %}
+			{% if include.attrURL %}
+				<a class="image-attribution" href="{{ include.attrURL }}" target="_blank">{{ include.attr }}</a>
+			{%- else -%}
+				<div class="image-attribution">{{ include.attr }}</div>
+			{%- endif %}
+	{%- else -%}
+		<!-- -->
+	{%- endif %}
 </div>
+{%- endif %}

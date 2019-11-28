@@ -4,6 +4,7 @@ title:  "Style overview"
 date:   2019-09-03 00:11:57 +1000
 
 lore:	frontier2424
+heroimg: https://pbs.twimg.com/media/DeOA5jXXUAAQSmJ?format=jpg&name=medium
 toc:
   - Verisimilitude
   - Science
@@ -25,7 +26,7 @@ Frontier2424 creations should feel more akin to westerns and military genres tha
 
 The lo-fi sci-fi feel of Frontier2424 is intentional, intended to assist in delivering the themes of survival and perseverance. Technology is designed to be robust and is often battered from years of use causing it to become unreliable and in need of repair. — Technology won’t save you.
 
-{% include functions-image.html src="https://pbs.twimg.com/media/DeOA5jXXUAAQSmJ?format=jpg&name=medium" alt="alt text"%}
+{% include functions-image.html src="https://pbs.twimg.com/media/DeOA5jXXUAAQSmJ?format=jpg&name=medium" alt="alt text" attr="Bob Jane" attrURL="https://trevorbrennan.com/" %}
 
 ## Science
 

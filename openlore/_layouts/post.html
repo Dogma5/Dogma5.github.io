@@ -1,6 +1,13 @@
 ---
 layout: "wrapper"
 ---
+
+{% if page.heroimg %}
+	<div style="height:50vh; background-image:url({{ page.heroimg }}); ">
+d
+	</div>
+{% endif %}
+
 <div class="wrapper grid">
 
 	<main class="content">
@@ -8,7 +15,7 @@ layout: "wrapper"
 		{{ content }}
 	</main>
 
-	<aside>
+	<aside class="sidebar">
 		{%- include functions-toc.html -%}
 		{%- include functions-related-posts.html -%}
 	</aside>
