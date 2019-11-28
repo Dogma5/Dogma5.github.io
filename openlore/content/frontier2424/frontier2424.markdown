@@ -5,7 +5,7 @@ permalink: "/frontier2424/"
 
 lore: frontier2424
 intro: |
-  On the frontier of deep-space nothing is free. New worlds provide opportunity for growth and prosperity, but with wealth comes power and bloodshed.
+  On the frontier of deep-space nothing is free. New worlds provide opportunity for growth and prosperity, but with wealth comes power and bloodshed. [Credits](/frontier2424/credits/)
 primary: [Prologue, /frontier2424/prologue/]
 secondary: [Timeline, /frontier2424/events/timeline/]
 splash-img: https://robertsspaceindustries.com/media/kdacnfxianrhur/wallpaper_1920x1080/Source.png

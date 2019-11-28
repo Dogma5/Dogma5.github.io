@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Credits"
+date:   2019-09-03 00:11:57 +1000
+
+lore:	frontier2424
+---
+
+Frontier2424 is a collaborative effort and was only actualized with the combined effort from many individuals.
+
+## Core team
+
+- **Executive designer** T.L. Brennan
+- **Head writer** T.L. Brennan
+- **Concept artist** [Recruiting](#)
+- **Editor** [Recruiting](#)
+
+
+## Special thanks
+
+- **Beta reader** Bernadette Dorahy
