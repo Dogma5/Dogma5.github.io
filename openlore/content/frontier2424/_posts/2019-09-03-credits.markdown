@@ -8,7 +8,7 @@ lore:	frontier2424
 
 Frontier2424 is a collaborative effort and was only actualized with the combined effort from many individuals.
 
-## Core team
+## Contributors
 
 - **Executive designer** T.L. Brennan
 - **Head writer** T.L. Brennan

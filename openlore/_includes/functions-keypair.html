@@ -1,0 +1,13 @@
+{% if include.list %}
+<table>
+		{% for item in include.list %}
+		<tr>
+			<th>{{ item.Row[0] | markdownify | remove: '<p>' | remove: '</p>' }}</th>
+			<td>{{ item.Row[1] | markdownify | remove: '<p>' | remove: '</p>' }}</td>
+		</tr>
+		{% endfor %}
+</table>
+{% else %}
+	<!-- No list -->
+{% endif %}
+

@@ -1,30 +1,72 @@
 ---
 layout: post
-title:  "locations post3"
+title:  "Steppe"
 date:   2019-09-03 00:11:57 +1000
 
 lore:	frontier2424
+toc:
+  - History
+  - Conflicts
+  - Geography
+  - Governance
+  - Economy
+  - Demographics
+
+details:
+  - Row:
+    - Designation
+    - VI-317
+  - Row:
+    - System
+    - Sinum
+  - Row:
+    - Nearest gate
+    - 30 days sub-light
+  - Row:
+    - Comms Delay
+    - 4hrs
+  - Row:
+    - Established by
+    - "[PavlovIntergalactic](#)"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+Deep-space / frontier / colonial
 
-`YEAR-MONTH-DAY-title.MARKUP`
+{% include functions-keypair.html list=page.details %}
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+## History
 
-Jekyll also offers powerful support for code snippets:
+## Conflicts
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+### Raiders
+Deep-space raiders have recently taken to seeing _Steppe_ as an easy target.
+Too far away from main _empire_ military routes and not well protected. The raiders often raid towns and leave before any organised retaliation.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+### Organised crime
+Family run entrepreneurial firms
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+## Geography
+### General characteristics
+Long ago terraformed into a grain harvesting planet the majority of the surface of Steppe is covered in great plains, great lakes and gorges. Some mountain ranges make up the equator known as the Belt Ranges. Old Terraforming towers can be seen scattered across the landscape. However most are in disrepair as  has given up, gone bust, ~~or maybe the Terraforming is complete.~~
+
+### Geology
+?
+### Climate
+Seasonal dust storms are prolific.
+
+### Biodiversity
+?
+
+## Governance
+Raids have lead to some small military presence in the larger towns.
+
+## Economy
+**Farming planet**
+Main export is grain and cattle ranching.
+https://en.wikipedia.org/wiki/Dryland_farming
+
+## Demographics
+### Language
+### Religion
+### Health
+### Education
