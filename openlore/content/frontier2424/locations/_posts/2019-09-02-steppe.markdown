@@ -27,7 +27,7 @@ details:
     - 4hrs
   - Row:
     - Established by
-    - "[PavlovIntergalactic](#)"
+    - "[Pavlov Intergalactic](/frontier2424/factions/pavlovintergalactic/)"
 ---
 
 Deep-space / frontier / colonial
@@ -35,38 +35,47 @@ Deep-space / frontier / colonial
 {% include functions-keypair.html list=page.details %}
 
 ## History
+Naturally a sandy cloudy planet, VI-317 was originally discovered by a private mining recon team scouting the Sinum system. Not suitable for mining the claim was sold to [Pavlov Intergalactic](/frontier2424/factions/pavlovintergalactic/) who was interested in the [terraforming](/frontier2424/technology/terraforming/) and subsequent farming potential of the sandy soil and thick atmosphere.
+
+Once terraformed and habitable VI-317 was named Steppe (grassland) and the first invites to settlers were issued.
+
+The remote location and local conflicts caused a slow development of Steppe and Pavlov Intergalactic chose to cut losses and withdraw from the planet. Leaving local family run entrepreneurial firms and the ~~empire~~ in charge.
 
 ## Conflicts
 
 ### Raiders
-Deep-space raiders have recently taken to seeing _Steppe_ as an easy target.
-Too far away from main _empire_ military routes and not well protected. The raiders often raid towns and leave before any organised retaliation.
+Deep-space raiders have recently taken to seeing Steppe as an easy target.
+Too far away from main ~~empire~~ military routes and not well protected. The raiders often attack towns and leave before any strong retaliation can be organised.
 
 ### Organised crime
-Family run entrepreneurial firms
+Three major family run entrepreneurial firms, ~~Colt~~, ~~Smith~~ and ~~Western~~ are in constant conflict with one another and vie for control of land and export deals with the assistance from smaller organisations. In time this competition and lack of formal Governance has lead to an increase of organised crime and conflicts between the families.
 
 ## Geography
 ### General characteristics
-Long ago [terraformed](/frontier2424/technology/terraforming/) into a grain harvesting planet the majority of the surface of Steppe is covered in great plains, great lakes and gorges. Some mountain ranges make up the equator known as the Belt Ranges. Old Terraforming towers can be seen scattered across the landscape. However most are in disrepair as  has given up, gone bust, ~~or maybe the Terraforming is complete.~~
+Long ago terraformed into a grain harvesting planet the majority of the surface of Steppe is covered in great plains, great lakes and gorges. Some mountain ranges make up the equator known as the Belt Ranges. Old Terraforming towers can be seen scattered across the landscape. However most are in disrepair since Pavlov Intergalactic's the withdraw.
 
-### Geology
-?
 ### Climate
-Seasonal dust storms are prolific.
+Steppe is typically hot and dry, with rare but prolonged storms in the wet-season.
+
+Seasonal dust storms and large dust devil whirlwinds are prolific across Steppe and winds will often roll unperturbed across the great plains gathering immense speed.
 
 ### Biodiversity
-?
+There is no native flora and fauna on VI-317, all plant and crop species have been introduced by the settlers. Flora consists mainly of harvestable grains, and fauna is typically farming cattle.
 
 ## Governance
 Raids have lead to some small military presence in the larger towns.
 
 ## Economy
-**Farming planet**
 Main export is grain and cattle ranching.
-https://en.wikipedia.org/wiki/Dryland_farming
 
 ## Demographics
+
 ### Language
+
 ### Religion
+Traditional missions
+
 ### Health
+
+
 ### Education
