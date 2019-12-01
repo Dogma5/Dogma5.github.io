@@ -64,6 +64,9 @@ nav:
       events:
         title: Events
         url: /frontier2424/events/
+      events:
+        title: Technology
+        url: /frontier2424/technology/
       style-guides:
         title: Style guides
         url: /frontier2424/style-guides/
