@@ -57,6 +57,10 @@ a {
 .content {
   line-height: 1.75;
 
+	h1, h2, h3 {
+		font-family: Montserrat;
+	}
+
 	// Size
 	h1 { font-size: 3rem; }
 	h2 { font-size: 2rem; }
@@ -73,6 +77,15 @@ a {
 		border-left: solid 0.5rem #dedede;
 		padding-left: 1.5rem;
 		margin-left: 0.25rem;
+	}
+
+	table {
+		text-align: left;
+		border-collapse: collapse;
+
+		th, td {
+			padding-right: 0.5rem;
+		}
 	}
 
 	:target {
