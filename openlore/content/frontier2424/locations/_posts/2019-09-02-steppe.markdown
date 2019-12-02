@@ -4,6 +4,7 @@ title:  "Steppe"
 date:   2019-09-03 00:11:57 +1000
 
 lore:	frontier2424
+heroimg: /assets/img/location-steppe.jpg
 toc:
   - History
   - Conflicts
@@ -35,20 +36,20 @@ Deep-space / frontier / colonial
 {% include functions-keypair.html list=page.details %}
 
 ## History
-Naturally a sandy cloudy planet, VI-317 was originally discovered by a private mining recon team scouting the Sinum system. Not suitable for mining the claim was sold to [Pavlov Intergalactic](/frontier2424/factions/pavlovintergalactic/) who was interested in the [terraforming](/frontier2424/technology/terraforming/) and subsequent farming potential of the sandy soil and thick atmosphere.
+Naturally a sandy cloudy planet, VI-317 was originally discovered by a private recon team scouting the Sinum system for mining opportunities. Not suitable for mining the claim was sold to [Pavlov Intergalactic](/frontier2424/factions/pavlovintergalactic/) who was interested in the [terraforming](/frontier2424/technology/terraforming/) and subsequent farming potential of the sandy soil and thick atmosphere.
 
 Once terraformed and habitable VI-317 was named Steppe (grassland) and the first invites to settlers were issued.
 
-The remote location and local conflicts caused a slow development of Steppe and Pavlov Intergalactic chose to cut losses and withdraw from the planet. Leaving local family run entrepreneurial firms and the ~~empire~~ in charge.
+Due to the remote location, and local conflicts, development of Steppe was slower than other colonies and Pavlov Intergalactic chose to cut it's losses and withdraw from the planet. Leaving local family run entrepreneurial firms to maintain order.
 
 ## Conflicts
 
 ### Raiders
-Deep-space raiders have recently taken to seeing Steppe as an easy target.
-Too far away from main ~~empire~~ military routes and not well protected. The raiders often attack towns and leave before any strong retaliation can be organised.
+The [Mwuaji Boyz](/frontier2424/factions/mwuaji-boyz/) pirate organization has recently taken to seeing Steppe as an easy target.
+Too far away from main ~~empire~~ military routes and not well protected. Pirates often attack and raid towns, leaving before any strong retaliation can be organised.
 
 ### Organised crime
-Three major family run entrepreneurial firms, ~~Colt~~, ~~Smith~~ and ~~Western~~ are in constant conflict with one another and vie for control of land and export deals with the assistance from smaller organisations. In time this competition and lack of formal Governance has lead to an increase of organised crime and conflicts between the families.
+Three major family run entrepreneurial firms, ~~Colt~~, ~~Smith~~ and ~~Western~~ are in constant conflict with one another and vie for control of land and export deals with the assistance of smaller organisations. In time this competition and lack of formal Governance has lead to an increase of organised crime and conflicts between the families.
 
 ## Geography
 ### General characteristics
