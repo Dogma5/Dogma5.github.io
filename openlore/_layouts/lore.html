@@ -18,10 +18,36 @@ layout: "wrapper"
 
 {{ content }}
 
-<ul>
-	{% for post in site.categories.[page.lore] %}
-		<li>
-			<a href="{{ post.url }}">{{ post.title }}</a>
-		</li>
-  {% endfor %}
-</ul>
+
+
+{% if page.lore -%}
+	<section><!-- Categories -->
+		<div class="wrapper">
+			<h2 class="visuallyhidden">categories</h2>
+			<ul class="categories-list">
+			{%- for categories in site.nav[page.lore].categories %}
+					<li><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
+			{% endfor %}
+			</ul>
+		</div>
+	</section>
+
+	<section class="categories"><!-- Latest posts -->
+		<div class="wrapper">
+			<h2 class="visuallyhidden">Latest posts</h2>
+			<ol class="post-promos">
+				{% for post in site.categories.[page.lore] limit:8 %}
+					<li>
+						<div class="aspect-ratio-box">
+							<div class="aspect-ratio-box-inside">
+								{{ post.categories[1] }}<br>
+								<a href="{{ post.url }}">{{ post.title }}</a>
+							</div>
+						</div>
+					</li>
+			  {% endfor %}
+			</ol>
+		</div>
+	</section>
+{%- endif %}
+

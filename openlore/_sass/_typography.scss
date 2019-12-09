@@ -53,6 +53,10 @@ a {
 		display: block;
 	}
 
+//Reset this in most cases see: *+*
+h1, h2, h3, h4, h5 {
+	margin-top: 0;
+}
 
 .content {
   line-height: 1.75;

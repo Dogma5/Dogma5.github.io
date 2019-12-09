@@ -15,4 +15,3 @@ splash-img: https://robertsspaceindustries.com/media/kdacnfxianrhur/wallpaper_19
 splash-img-attribution: Name Mcname
 splash-img-attribution-url: "#"
 ---
-frontier2424
