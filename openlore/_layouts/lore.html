@@ -40,8 +40,12 @@ layout: "wrapper"
 					<li>
 						<div class="aspect-ratio-box">
 							<div class="aspect-ratio-box-inside">
-								{{ post.categories[1] }}<br>
-								<a href="{{ post.url }}">{{ post.title }}</a>
+								{% for categories in site.nav[page.lore].categories %}
+									{% if post.url contains categories[1].url -%}
+										<small>{{ categories[1].title }}</small><br>
+									{% endif %}
+								{% endfor %}
+								<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 							</div>
 						</div>
 					</li>
