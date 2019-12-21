@@ -1,3 +1,11 @@
+html, body {
+	height: 100%;
+}
+body {
+	display: grid;
+	grid-template-rows: auto 1fr auto; //Header, pagearea, Footer
+}
+
 .wrapper {
 	width: 80%;
 	// max-width: 1024px;
