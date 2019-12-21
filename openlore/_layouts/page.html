@@ -1,6 +1,14 @@
 ---
 layout: "wrapper"
 ---
-<div class="wrapper">
-	{{ content }}
+<div class="wrapper grid">
+
+	<main class="content">
+		{{ content }}
+	</main>
+
+	<aside class="sidebar">
+		{%- include functions-toc.html -%}
+	</aside>
+
 </div>

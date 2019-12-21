@@ -1,6 +1,6 @@
 ---
 layout: category
-title:  "frontier2424/characters/"
+title:  "Frontier2424 Characters"
 permalink: "/frontier2424/characters/"
 
 lore:	frontier2424

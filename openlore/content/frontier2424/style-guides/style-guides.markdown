@@ -1,6 +1,6 @@
 ---
 layout: category
-title:  "frontier2424/style-guides/"
+title:  "Frontier2424 Style-guides"
 permalink: "/frontier2424/style-guides/"
 
 lore:	frontier2424

@@ -1,6 +1,6 @@
 ---
 layout: category
-title:  "frontier2424/factions/"
+title:  "Frontier2424 Factions"
 permalink: "/frontier2424/factions/"
 
 lore:	frontier2424

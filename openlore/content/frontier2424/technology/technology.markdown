@@ -1,6 +1,6 @@
 ---
 layout: category
-title:  "frontier2424/technology/"
+title:  "Frontier2424 Technology"
 permalink: "/frontier2424/technology/"
 
 lore:	frontier2424

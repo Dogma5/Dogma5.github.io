@@ -1,6 +1,6 @@
 ---
 layout: category
-title:  "frontier2424/events/"
+title:  "Frontier2424 Events"
 permalink: "/frontier2424/events/"
 
 lore:	frontier2424
