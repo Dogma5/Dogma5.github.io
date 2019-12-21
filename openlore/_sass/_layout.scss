@@ -73,7 +73,7 @@ a.image-attribution {
 }
 
 .sidebar {
-	font-size: 0.8rem;
+	font-size: 0.875rem;
 
 	ul {
 		list-style: none;
@@ -89,6 +89,28 @@ a.image-attribution {
 	position: sticky;
 	position: -webkit-sticky;
 	top: 20px; /* required */
+	text-align: right;
+
+	li {
+		margin: 0;
+	}
+
+	a {
+		display: block;
+		padding-right: 15px;
+		line-height: 2rem;
+
+		text-decoration: none;
+		color: $color-text;
+		border-right: solid 1px silver;
+
+		&:hover,
+		&:focus {
+			border-right: solid 3px $color-text;
+			padding-right: 13px;
+			font-weight: bold;
+		}
+	}
 }
 
 .grid {
