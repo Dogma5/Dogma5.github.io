@@ -3,6 +3,8 @@ layout: post
 title:  "Steppe"
 date:   2019-09-03 00:11:57 +1000
 tags: planets, colonies
+excerpt: >
+  Long ago terraformed into a grain harvesting planet the majority of the surface of Steppe is covered in great plains, great lakes and gorges.
 
 lore:	frontier2424
 heroimg: /assets/img/location-steppe.jpg

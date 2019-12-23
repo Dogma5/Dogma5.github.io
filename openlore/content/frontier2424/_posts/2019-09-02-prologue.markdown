@@ -2,6 +2,8 @@
 layout: post
 title:  "Prologue"
 date:   2019-09-03 00:11:57 +1000
+excerpt: >
+  "Out here. On the frontier, you are alone." An excerpt from The UCU Marshal’s Field Guide.
 
 lore:	frontier2424
 ---
@@ -17,4 +19,3 @@ Without life-support you will suffocate. Without environmental control you will 
 Your equipment is designed for the long haul. Equipment that is rugged, practical, and repairable, takes precedence over fast and high-tech. Because out here on the frontier, journeys don’t take weeks, they can take years, decades even. Help is so far away that in an emergency, communication may be delayed by days.
 
 Out here. On the frontier, you are alone."
-
