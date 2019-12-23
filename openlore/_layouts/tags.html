@@ -1,0 +1,29 @@
+---
+layout: "wrapper"
+---
+<div class="wrapper grid">
+
+	<main class="content">
+		{{ content }}
+
+		<ul id="archives">
+		{% for tag in site.tags %}
+			{% capture tag_name %}{{ tag | first }}{% endcapture %}
+		  <li class="archive-group">
+		    <h4 id="{{ tag_name | slugify }}">#{{ tag_name }}</h4>
+				<ul>
+				{% for post in site.tags[tag_name] %}
+					<li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+				{% endfor %}
+				</ul>
+		  </li>
+		{% endfor %}
+		</ul>
+
+	</main>
+
+	<aside class="sidebar">
+		{%- include functions-toc.html -%}
+	</aside>
+
+</div>
