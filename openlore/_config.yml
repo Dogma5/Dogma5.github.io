@@ -69,11 +69,10 @@ nav:
       style-guides:
         title: Style guides
         url: /frontier2424/style-guides/
-        class: style-guides
       stories:
         title: Stories
         url: /frontier2424/stories/
-        class: emphasis
+        hidden: true
   blackfire4:
     title: Blackfire 4
     url: /blackfire4/

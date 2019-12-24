@@ -35,26 +35,34 @@
 
 		{% if page.lore -%}
 		<div><!-- Categories -->
-			{%- assign catTitle = "Categories" -%}
+			{%- assign catTitle = "World building" -%}
 			{%- assign catClass = "" -%}
 			{%- for categories in site.nav[page.lore].categories -%}
-				{%- if page.categories[1] == categories[0] or categories[1].url == page.url -%}
-					{%- assign catTitle = categories[1].title -%}
-					{%- assign catClass = "isActive" -%}
-				{%- endif -%}
+				{% unless categories[1].hidden %}
+					{%- if page.categories[1] == categories[0] or categories[1].url == page.url -%}
+						{%- assign catTitle = categories[1].title -%}
+						{%- assign catClass = "isActive" -%}
+					{%- endif -%}
+				{% endunless %}
 			{%- endfor %}
 			<button class="dropdown-btn {{ catClass }}">{{ catTitle }}</button>
 
-			<ul class="dropdown-box">
+			<ul class="dropdown-box worldbuilding-list">
 			{%- for categories in site.nav[page.lore].categories %}
-				{% if categories[1].url == page.url or page.categories contains categories[0] -%}
-					<li class="isActive {{ categories[1].class }}"><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
-				{%- else -%}
-					<li class="{{ categories[1].class }}"><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
-				{%- endif -%}
+				{% unless categories[1].hidden %}
+					{% if categories[1].url == page.url or page.categories contains categories[0] -%}
+						<li class="isActive"><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
+					{%- else -%}
+						<li class=""><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
+					{%- endif -%}
+				{% endunless %}
 			{% endfor %}
 			</ul>
 		</div>
+
+
+		<a href="/{{ page.lore }}/stories" class="stories">Stories</a>
+
 		{%- endif %}
 
 		<!-- <div>{{ page.title }}</div> -->
