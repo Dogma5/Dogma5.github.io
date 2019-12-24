@@ -12,8 +12,6 @@ layout: "wrapper"
 </div>
 
 
-
-
 <div class="wrapper">
 	<h2 class="visuallyhidden">Latest posts</h2>
 	<ol class="post-promos">
@@ -35,6 +33,7 @@ layout: "wrapper"
 						</div>
 						<div class="postlist-footer">
 							<small>
+								<!-- {% if post.author  %}By {{ post.author }} {% endif %} -->
 								{% for tag in post.tags %}{{ tag }} {% endfor %}
 							</small>
 						</div>
@@ -45,4 +44,3 @@ layout: "wrapper"
 	  {% endfor %}
 	</ol>
 </div>
-

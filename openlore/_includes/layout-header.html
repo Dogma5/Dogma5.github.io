@@ -48,9 +48,9 @@
 			<ul class="dropdown-box">
 			{%- for categories in site.nav[page.lore].categories %}
 				{% if categories[1].url == page.url or page.categories contains categories[0] -%}
-					<li class="isActive"><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
+					<li class="isActive {{ categories[1].class }}"><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
 				{%- else -%}
-					<li><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
+					<li class="{{ categories[1].class }}"><a href="{{ categories[1].url }}">{{ categories[1].title }}</a></li>
 				{%- endif -%}
 			{% endfor %}
 			</ul>
@@ -74,5 +74,3 @@
 		</ul>
 	</div>
 </header>
-
-

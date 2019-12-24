@@ -45,7 +45,6 @@ collections:
     permalink: /:categories/:title/
   category:
     output: true
-
 # Nav global
 nav:
   frontier2424:
@@ -70,6 +69,11 @@ nav:
       style-guides:
         title: Style guides
         url: /frontier2424/style-guides/
+        class: style-guides
+      stories:
+        title: Stories
+        url: /frontier2424/stories/
+        class: emphasis
   blackfire4:
     title: Blackfire 4
     url: /blackfire4/

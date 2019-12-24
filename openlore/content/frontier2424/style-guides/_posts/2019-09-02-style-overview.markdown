@@ -2,6 +2,7 @@
 layout: post
 title:  "Style overview"
 date:   2019-09-03 00:11:57 +1000
+author: "T.L. Brennan"
 
 lore:	frontier2424
 heroimg: https://i.imgur.com/fQPj0MC.jpg
@@ -80,4 +81,3 @@ Much of the vernacular for life onboard space “ships” is inspired by real wo
 Intelligent life has yet to be discovered.
 
 Some extremists sects believe that the parracite introduced during the tech-plague may have been sentient and our first-contact.
-
