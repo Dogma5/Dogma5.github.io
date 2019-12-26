@@ -2,23 +2,28 @@
 layout: "wrapper"
 ---
 
-{% if page.heroimg %}
+{% if page.heroimg.src %}
 	<div class="splash overlay" style="height:50vh; background-image:url({{ page.heroimg.src }}); background-size: cover; background-position: center center; display:flex; align-items: center;">
 		<div class="wrapper content">
 				<h1 style="color:white">{{ page.title }}</h1>
 				{% if page.author %}<p>Written by {{ page.author }}</p>{% endif %}
-				<div>{% if page.tags %}#{{ page.tags }}{% endif %}</div>
 		</div>
-		<div class="attribution" style="background:rgba(0,0,0,0.25)">
-			Artwork by <a href="{{ page.heroimg.attrURL }}" class="">{{ page.heroimg.attr }}</a>
-		</div>
+		{% if page.heroimg.attr %}
+			<div class="attribution">
+			{% if page.heroimg.attrURL %}
+				Image by <a href="{{ page.heroimg.attrURL }}" class="">{{ page.heroimg.attr }}</a>
+			{% else %}
+				Image by {{ page.heroimg.attr }}
+			{% endif %}
+			</div>
+		{% endif %}
 	</div>
 {% endif %}
 
 <div class="wrapper grid">
 
 	<main class="content">
-		{% if page.heroimg %}{% else %}
+		{% if page.heroimg.src %}{% else %}
 			<h1>{{ page.title }}</h1>
 			{% if page.author %}<p>Written by {{ page.author }}</p>{% endif %}
 		{% endif %}

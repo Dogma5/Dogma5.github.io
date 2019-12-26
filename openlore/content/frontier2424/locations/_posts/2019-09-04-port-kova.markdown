@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Port Kova"
+date:   2019-09-03 00:11:57 +1000
+tags: [colonies]
+
+lore:	frontier2424
+heroimg:
+  src: "https://pbs.twimg.com/media/ECWtI7_UIAAUmlq.jpg"
+excerpt: >
+  A deep-space trading port established during the development of Steppe.
+toc:
+  - History
+  - Economy
+  - Demographics
+
+details:
+  - Row:
+    - Designation
+    - "SIN.KOV"
+  - Row:
+    - System
+    - Sinum
+  - Row:
+    - Established by
+    - "[Pavlov Intergalactic](/frontier2424/factions/pavlovintergalactic/)"
+---
+{% include functions-keypair.html list=page.details %}
+A deep-space trading port, Kova was first established during the development of [VI-317 (Steppe)](/frontier2424/locations/steppe/).
+
+## History
+TBC
+
+## Economy
+TBC
+
+## Demographics
+TBC
