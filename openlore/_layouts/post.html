@@ -3,12 +3,14 @@ layout: "wrapper"
 ---
 
 {% if page.heroimg %}
-	<div class="overlay" style="height:50vh; background-image:url({{ page.heroimg }}); background-size: cover; background-position: center center; display:flex; align-items: center;">
+	<div class="splash overlay" style="height:50vh; background-image:url({{ page.heroimg.src }}); background-size: cover; background-position: center center; display:flex; align-items: center;">
 		<div class="wrapper content">
-
 				<h1 style="color:white">{{ page.title }}</h1>
 				{% if page.author %}<p>Written by {{ page.author }}</p>{% endif %}
-
+				<div>{% if page.tags %}#{{ page.tags }}{% endif %}</div>
+		</div>
+		<div class="attribution" style="background:rgba(0,0,0,0.25)">
+			Artwork by <a href="{{ page.heroimg.attrURL }}" class="">{{ page.heroimg.attr }}</a>
 		</div>
 	</div>
 {% endif %}

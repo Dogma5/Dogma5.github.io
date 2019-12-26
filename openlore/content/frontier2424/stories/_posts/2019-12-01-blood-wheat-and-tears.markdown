@@ -4,7 +4,10 @@ title:  "Blood, wheat, and tears"
 date:   2019-12-01 00:11:57 +1000
 author: "T.L. Brennan"
 tags: steppe
-heroimg: https://ih1.redbubble.net/image.14465735.7655/flat,1000x1000,075,f.jpg
+heroimg:
+  src: "https://ih1.redbubble.net/image.14465735.7655/flat,1000x1000,075,f.jpg"
+  attr: "Simon Stålenhag"
+  attrURL: "https://www.simonstalenhag.se/"
 
 lore:	frontier2424
 ---
