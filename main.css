@@ -1,7 +1,7 @@
 :root {
   --fg: rgba(255, 237, 222, 1);
 	--hc: red;
-  --bg: #717575;
+  --bg: #111e1e;
 
 	--analog-blur: 0.8px;
 	--analog-rotation: 0.15deg;
@@ -57,7 +57,7 @@ a:focus {
   display: grid;
   align-items: center;
   justify-content: center;
-	background-image: url("assets/bg2a.JPG");
+	background-image: url("assets/bg.jpg");
   background-size: cover;
   background-position: center center;
 }
