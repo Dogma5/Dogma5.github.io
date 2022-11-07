@@ -1,0 +1,192 @@
+:root {
+  --fg: rgba(255, 237, 222, 1);
+	--hc: red;
+  --bg: #717575;
+
+	--analog-blur: 0.8px;
+	--analog-rotation: 0.15deg;
+	--analog-offset: -3px;
+}
+
+html, body {
+  height:100%;
+	margin: 0;
+	padding: 0;
+}
+
+::selection {
+  background: rgba(0,0,0,0.5);
+}
+
+h1, h2, h3, p, img {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  background: var(--bg);
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.12em;
+  color: var(--fg);
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 105%;
+	line-height: 1.5;
+}
+
+a {
+	color: var(--fg);
+	text-underline-offset: 0.2em;
+	text-decoration-color: inherit;
+	text-decoration-thickness: 1px;
+	text-decoration-skip-ink: auto;
+}
+
+a:hover,
+a:focus {
+	color: var(--hc);
+	text-underline-offset: 0em;
+	text-decoration-thickness:4px;
+	outline: none;
+}
+
+.screen {
+  z-index:1;
+  width: 100%;
+	min-height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+	background-image: url("assets/bg2a.JPG");
+  background-size: cover;
+  background-position: center center;
+}
+
+.frame {
+	display: flex;
+	flex-direction: column;
+	gap:2rem;
+	padding: 2rem 0;
+	width: 80%;
+	max-width: 60em;
+	  text-align: center;
+		margin: 0 auto;
+  filter:
+		blur( var(--analog-blur) )
+		url(#chromatic-aberration)
+	;
+
+  font-weight: 800;
+}
+
+h1 {
+	line-height: 0;
+	transform: translateX( var(--analog-offset) );
+}
+
+h1 img {
+	height: 4rem;
+	max-width: 100%;
+}
+
+.byline {
+		margin-top: 2rem;
+}
+
+.nw{
+	white-space: nowrap;
+}
+
+small {
+	font-size: 0.75;
+	font-weight: 500;
+}
+
+.content {
+	margin: 0 auto;
+  transform: rotate( var(--analog-rotation) );
+}
+.content h2,
+.content p{
+  display: inline;
+  font-size: inherit;
+}
+.content h2 {
+  font-size: 0.7em;
+  color: var(--fg);
+	font-weight: 500;
+}
+
+footer {
+	font-weight: normal;
+	font-size: 0.5em;
+}
+
+.projects {
+	padding-top: 1rem;
+}
+
+.projects h2 {
+	font-size: 0.5em;
+	font-weight: 500;
+	padding-bottom: 1rem;
+}
+
+.projects ul {
+	display: flex;
+	gap: 3rem;
+	justify-content: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.projects svg {
+	display: block;
+	width: 100%;
+	max-width: 13rem;
+}
+
+.projects a {
+	display: inline-block;
+	border-bottom: solid 4px transparent;
+}
+.projects a:hover,
+.projects a:focus{
+	border-bottom: solid 4px;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+
+@media (max-width: 820px){
+	body {
+			font-size: 90%;
+	}
+	.byline {
+			margin-top: 1rem;
+	}
+	.frame {
+		gap: 1rem;
+	}
+
+	.med-row {
+		display: block;
+	}
+}
+
+@media (max-width: 400px){
+	.content .sml-row{
+		display: block;
+	}
+}
