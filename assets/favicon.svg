@@ -1,0 +1,13 @@
+<svg width="88" height="88" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<style>
+		path {
+			fill: #88141f;
+		}
+		@media ( prefers-color-scheme: dark ) {
+			path {
+				fill: #FFFFFF;
+			}
+		}
+	</style>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M44 25.828L24.4741 40.0665L31.9324 63.1047H56.0676L63.5258 40.0664L44 25.828ZM88 32.0851L44 0L0 32.0851L16.8065 84H71.1935L88 32.0851Z"/>
+</svg>
