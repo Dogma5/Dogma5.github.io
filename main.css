@@ -1,5 +1,5 @@
 :root {
-  --fg: rgba(255, 237, 222, 1);
+  --fg: rgba(255, 250, 246, 1);
 	--hc: red;
   --bg: #111e1e;
 
@@ -84,7 +84,7 @@ h1 {
 	transform: translateX( var(--analog-offset) );
 }
 
-h1 img {
+h1 svg {
 	height: 4rem;
 	max-width: 100%;
 }
